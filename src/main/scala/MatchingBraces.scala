@@ -1,10 +1,6 @@
 import scala.annotation.tailrec
 
-object MatchingBracesApp extends App {
-  println(areBracesMatched("[{()()}][]"))
-  println(areBracesMatched("([)]"))
-  println(areBracesMatched("[{()}"))
-
+object MatchingBraces {
   def areBracesMatched(str: String): Boolean = {
     val openingBraces = List('(', '[', '{')
     @tailrec
